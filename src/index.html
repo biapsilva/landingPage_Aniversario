@@ -3,12 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu Aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Life+Savers:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <h1>Olá</h1>
-    <img src="./Images/Bolo.jpg" alt="">
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo">
+            <p class="hero__text">É hora de soprar as velinhas e celebrar mais um ano de vida! Venha festejar comigo no meu aniversário e tornar esse momento ainda mais especial daqui: <span id="contador"></span></p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização:</b>
+                        Elói Cerqueira, 20 (Salão de festas) - Belém - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Trazer:</b>
+                        comida ou bebida
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando:</b>
+                        26/08/2023 às 19h00
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">Confirmar presença</a>
+            </div>
+        </div>
+    </header>
+    <section class="event event--celebracao">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Celebração</h2>
+                <p class="event__details__description">
+                    É com grande entusiasmo que convido você a participar de uma festa de aniversário inesquecível! No dia 26/08/2023, estaremos reunindo amigos e familiares para celebrar mais um ano de vida e compartilhar momentos de alegria e emoção. Com uma atmosfera envolvente e decoração cuidadosamente elaborada, o evento promete ser uma celebração cheia de energia positiva e memórias para toda a vida. Junte-se a mim nessa comemoração especial, pois sua presença tornará meu aniversário ainda mais especial e significativo!
+                </p>
+            </div>
+            <img class="event__image" src="./Images/Bolo.jpg" alt="Bolo">
+        </div>
+    </section>
+    <section class="event event--local event--image-left">
+        <div class="container" data-aos="fade-left">
+        <div class="event__details">
+            <h2 class="event__details__title">Local</h2>
+            <p class="event__details__description">
+                O local de celebração é um lugar encantador onde cada detalhe foi cuidadosamente planejado para tornar meu aniversário ainda mais especial. A localização é fácil, fica próximo ao metrô Belém da linha vermelha.
+            </p>
+            </div>
+            <img class="event__image" src="./Images/Presentes.jpg" alt="Presentes">
+        </div> 
+    </section>
+    <section class="event event--lembracinha">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Lembrancinha</h2>
+                <p class="event__details__description">
+                    Minha deliciosa lembrancinha de cupcake é um mimo irresistível para tornar sua comemoração ainda mais doce e memorável. Feito com ingredientes selecionados e carinho especial, cada cupcake é uma verdadeira obra de arte culinária, decorado com esmero e capricho. Além de encantar os olhos, o sabor surpreendente é uma experiência única para o paladar. Essa pequena e saborosa lembrança é uma forma carinhosa de agradecer a presença de todos, permitindo que levem consigo um pedacinho do carinho e alegria que compartilhamos juntos nesse momento tão especial. Prepare-se para se apaixonar por essa doçura e levar para casa uma lembrança que será saboreada com alegria e gratidão!
+                </p>
+            </div>
+            <img class="event__image" src="./Images/CupCake.jpg" alt="CupCake">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
